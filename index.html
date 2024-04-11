@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gradient-to-r from-blue-500 to-cyan-500">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bewerbungsaufgabe - Drei in einer Reihe</title>
+  <link rel="stylesheet" href="public/index_tailwind.css">
+  <link rel="stylesheet" href="public/index_custom.css">
+  <script src="./build/index.js"></script>
+</head>
+<body>
+  <div id="grid" class="grid gap-7 lg:grid-cols-lg md:grid-cols-2 xs:grid-cols-1 grid-flow-row-dense m-5% lg:text-3xl xs:text-2xl">
+    <div id="rules" class="lg:row-span-1 sm:row-span-2 xs:row-span-1 bg-white shadow-md cstm-border">
+      <p class="text-4xl underline">Regeln</p>
+      <ol>
+        <li>Die Spieler setzen abwechselnd ihr Symbol in ein freies Feld.</li>
+        <li>Ein Spieler verliert, sobald er drei seiner Symbole in einer Zeile, Spalte oder Diagonalen (direkt nebeneinander) setzen muss.</li>
+        <li>Das Spiel endet unentschieden, wenn alle Felder gesetzt sind, ohne dass ein Spieler verloren hat.</li>
+      </ol>
+    </div>
+    <div id="gameBoardWrapper" class="flex justify-center align-middle">
+      <div id="gameBoard" class="flex flex-wrap w-10/12 aspect-square m-auto bg-white shadow-md cstm-border"></div>
+    </div>
+    <div id="info" class="md:m-0 xs:mb-4 bg-white shadow-md cstm-border">
+      <div id="playerSelect" class="flex flex-wrap justify-between m-5%">
+        <p class="w-full text-4xl underline">Wähle Spieler 1:</p>
+      </div>
+      <div id="infoText" class="m-5%"></div>
+    </div>
+  </div>
+</body>
+</html>

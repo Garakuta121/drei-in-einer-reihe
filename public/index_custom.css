@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+.cstm-border {
+  border: 0.5vw solid black;
+}
+
+.gameTile {
+  width: 25%;
+  aspect-ratio: 1;
+  border: 0.1vw solid black;
+}
+
+@media(min-width: 1024px) {
+  #info {
+    width: 80%;
+    padding: 5%;
+  }
+
+  .selectTile {
+    width: 70%;
+    margin: 15%;
+    aspect-ratio: 1;
+    border: 0.2vw solid black;
+  }
+}
+
+@media(max-width: 1023px) {
+  .selectTile {
+    width: 20%;
+    margin: 3.5%;
+    aspect-ratio: 1;
+    border: 0.2vw solid black;
+  }
+}
+
+p {
+  margin: 2%;
+  text-align: center;
+  font-weight: bold;
+}
+
+ol {
+  margin: 5%;
+}
+
+li {
+  margin: 5%;
+}
+
+.Kreuz {
+  width: 60%;
+  margin: auto;
+  content: url("X.svg");
+}
+
+.Kreis {
+  width: 60%;
+  margin: auto;
+  content: url("O.svg");
+}
